@@ -1,0 +1,937 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 16px;
+    letter-spacing: .1em;
+    font-family: 'Noto Serif JP',sans-serif;
+    color: #333;
+}
+p,.conceptSec h3,.flowSec h3,.serviceSec a {
+    font-family: 'Noto Sans JP',sans-serif;
+}
+.onlySp {
+    display: none;
+}
+.heroSp {
+    display: none;
+}
+
+.headerList {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 0 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logoImg {
+    margin: 16px 12px;
+}
+.headerList ul {
+    display: flex;
+}
+.heroPc {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.menuPc li a {
+    margin-left: 40px;
+    position: relative;
+    display: inline-block;
+}
+.headerList ul li a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #b71b27;
+    transition: .3s ease;
+}
+.headerList ul li a:hover::before {
+    width: 100%;
+}
+
+.conceptSec,.serviceSec,.questionSec{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#conceptAnc,#serviceAnc,#flowAnc,#questionAnc,#contactAnc {
+    margin-top: -175px;
+    padding-top: 175px;
+}
+.mainArea h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 160px;
+}
+.titleLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #223e69;
+    margin-top: 16px;
+}
+.titleLine::before,.titleLine::after {
+    content: "";
+    width: 4em;
+    height: 1px;
+    background-color: #223e69;
+    margin: 0 8px;
+}
+.questionSec .titleLine,.contactSec .titleLine {
+    margin-bottom: 48px;
+}
+.conceptSec h3 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 48px;
+}
+.conceptSec p {
+    margin-top: 24px;
+}
+.serviceImages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+.serviceTitles {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.serviceTitles h3 {
+    text-align: center;
+    flex-basis: 300px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+.serviceTexts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.serviceTexts p {
+    flex-basis: 300px;
+    line-height: 24px;
+}
+.serviceSec ul {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.serviceSec ul li {
+    flex-basis: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+.serviceSec ul li a::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    border-color: #333;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #333;
+}
+.serviceSec a:hover {
+    opacity: 50%;
+}
+
+.flowSec {
+    width: 100%;
+    height: 498px;
+    background-color: rgba(34,62,105,.05);
+}
+.flowSec h1 {
+    margin-top: 208px;
+    padding-top: 48px;
+}
+.flowSec .titleLine{
+    color: #b71b27;
+}
+.flowSec .titleLine::before,.flowSec .titleLine::after {
+    background-color: #b71b27;
+}
+.flowChart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 223px;
+}
+.flowChart h3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: .1em;
+    margin-top: 48px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 40px;
+    width: 60px;
+    height: 280px;
+    position: relative;
+}
+
+.arrowStart::after,.arrowLeft::after,
+.arrowMiddle::after,.arrowRight::after,
+.arrowEnd::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 95px;
+    margin-left: 4px;
+    border-color: #b71b27;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #b71b27;
+}
+.arrowLeft::after { opacity: 90%; }
+.arrowMiddle::after { opacity: 80%; }
+.arrowRight::after { opacity: 70%; }
+.arrowEnd::after { opacity: 60%; }
+
+.faqWrap {
+    position: relative;
+}
+.faqTop p ,.faqBottom p {
+    margin-top: 16px;
+    margin-left: 173px;
+    line-height: 30px;
+    height: 52px;
+}
+.faqTop {
+    margin-bottom: 48px;
+}
+
+.sircleTop::before {
+    content: "Q.";
+    background-color: #333;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 115px;
+    top: -10px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+}
+.sircleUpper::before {
+    content: "A.";
+    background-color: #b71b27;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 115px;
+    top: 55px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+}
+.sircleLower::before {
+    content: "Q.";
+    background-color: #333;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 115px;
+    top: 160px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+}
+.sircleBottom::before {
+    content: "A.";
+    background-color: #b71b27;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 115px;
+    top: 225px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contactSec {
+    background-color: rgba(34,62,105,.15);
+    width: 100%;
+    height: 1218px;
+    margin-bottom: 200px;
+}
+.contactSec h1 {
+    padding-top: 48px;
+}
+.contactSec .titleLine{
+    color: #333;
+}
+
+.contactSec form {
+    width: 1020px;
+    height: 1000px;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    padding-top: 24px;
+}
+.formRow {
+    font-family: 'Noto Sans JP',sans-serif;
+    font-size: 20px;
+    width: auto;
+    display: flex;
+    margin-top: 24px;
+}
+.formLabel {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:320px;
+}
+.contactSec input,textarea {
+    background-color: #fff;
+    height: 52px;
+}
+.customRadio {
+    margin-right: 40px;
+}
+.inquiryText {
+    margin-right: 78px;
+    align-self: flex-start;
+}
+.requiredLabel {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b71b27;
+    border-radius: 8px;
+    margin: 0 12px 0 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 24px;
+}
+.customRadio input[type="radio"] {
+    display: none;
+}
+.customRadio .radioMark {
+    display: inline-block;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.customRadio input[type="radio"]:checked + .radioMark::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    background-color: #333;
+    opacity: 90%;
+    border-radius: 50%; 
+}
+.customRadio input[type="radio"]:checked + .radioMark {
+    outline: 1px solid #333;
+}
+
+button {
+    font-family: 'Noto Serif JP',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    margin: 0  360px;
+    margin-top: 48px;
+    width: 300px;
+    height: 68px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+button:hover {
+    opacity: 80%;
+}
+.submitText::after {
+    content: "";
+    display: inline-block;
+    margin-left: 8px;
+    border-color: #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #fff;   
+}
+textarea {
+    height: 208px;
+    width: 664px;
+}
+input[type="text"],input[type="tel"] {
+    width: 332px;
+}
+input,#addressBottom {
+    width: 664px;
+}
+.postMark::before {
+    content: "〒";
+    font-size: 20px;
+    margin-right: 4px;
+}
+#addressTop {
+    width: 222px;
+}
+#addressBottom {
+    margin-left: 320px;
+}
+input,textarea {
+    padding-left: 10px;
+}
+input:focus,textarea:focus {
+    border: 1px solid #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.radioMark:hover {
+    outline: 1px solid #333;
+}
+
+.bottomSec {
+    position: relative;
+}
+.bottomSec:hover {
+    opacity: 80%;
+}
+.pageTop {
+    width: 60px;
+    height: 60px;
+    position: absolute; 
+    right: 24px;
+    bottom: 0px;
+    background-color: #333;
+}
+.pagetopBtn {
+    height: 60px;
+    width: 60px;
+}
+.pagetopBtn::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+footer {
+    width: 100%;
+    height: 62px;
+    font-family: 'Noto Serif JP',sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding-top: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .onlyPc {
+        display: none;
+    }
+    .onlySp {
+        display: flex;
+    }
+    .headerList,.headerList ul,.serviceImages,.serviceTitles,
+    .serviseTexts,.serviceSec ul,.serviceSec ul li,.flowChart,
+    .formRow,.addressWrapper {
+        display: block
+    }
+    .conceptSec,.serviceSec,
+    .questionSec,.contactSec form {
+        width: 100%;
+    }
+    input[type="text"],input[type="tel"],
+    input,#addressBottom,#addressTop,textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    button {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .flowChart {
+        padding: 0;
+    }
+    .headerList {
+        margin: 0;
+        padding: 0;
+    }
+    .headerList ul li a::before {
+        content: none;
+    }
+    .heroPc {
+        display: none;
+    }
+    .heroSp {
+        display: flex;
+        padding-top: 53px;
+    }
+    .logoImg {
+        display: flex;
+        justify-content: flex-start;
+        width: 240px;
+    }
+    .mainArea h3 {
+        font-size: 20px;
+    }
+    .titleLine {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    #conceptAnc,#serviceAnc,#flowAnc,#questionAnc,#contactAnc {
+        margin-top: -110px;
+        padding-top: 110px;
+    }
+    .conceptSec h1 {
+        margin-top: 48px;
+    }
+    .conceptSec h3 {
+        margin-top: 24px;
+    }
+    .conceptSec p {
+        font-size: 14px;
+        line-height: 28px;
+        margin: 16px 12px;
+        text-align: justify;
+    }
+    
+    .serviceSec h1 {
+        margin-top: 80px;
+    } 
+    .serviceSec .onlySp {
+        display: block;
+    }
+    .serviceSec .onlySp img {
+        margin: 24px 12px 0 12px;
+    }
+    .serviceSec .livingWrap img,.serviceSec .kitchenWrap img {
+        margin-top: 48px;
+    }
+    .serviceSec .onlySp h3 {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+    .serviceSec .onlySp p {
+        font-size: 14px;
+        line-height: 21px;
+        margin:8px 12px 0 12px;
+    }
+    .serviceSec .onlySp a {
+        font-size: 14px;
+        margin-left: 308px;
+    }
+    .serviceSec .onlySp a::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 4px;
+        border-color: #333;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #333;
+    }
+    .serviceSec a:hover {
+        opacity: 100%;
+    }
+    .flowSec {
+        height: 456px;
+    }
+    .flowSec h1 {
+        margin-top: 96px;
+        padding-top: 16px;
+    }
+    .flowSec .titleLine {
+        margin-bottom: 24px;
+    }
+    .flowSec .flowChart h3 {
+        font-size: 16px;
+        width: 300px;
+        height: 32px;
+        margin: 0 auto 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrowStart::after,.arrowLeft::after,
+    .arrowMiddle::after,.arrowRight::after,
+    .arrowEnd::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        left: 130px;
+        top: 40px;
+        border-color: #b71b27;
+        border-top: 16px solid #b71b27;
+        border-right: 16px solid transparent;
+        border-left: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+    }
+    .arrowEnd::after { opacity: 100%; }
+    .arrowRight::after { opacity: 90%; }
+    .arrowMiddle::after { opacity: 80%; }
+    .arrowLeft::after { opacity: 70%; }
+    .arrowStart::after { opacity: 60%; }
+    
+    .questionSec h1 {
+        margin-top: 80px;
+    }
+    .questionSec .titleLine {
+        margin-bottom: 24px;
+    }
+    .faqTop,.faqBottom {
+        margin: 24px 0 0 55px;
+    }
+    .faqTop p ,.faqBottom p {
+        width: 308px;
+        height: auto;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 22px 12px 0 0 ;
+    }
+    .sircleTop::before {
+        content: "Q.";
+        background-color: #333;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 15px;
+        top: -5px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+    }
+    .sircleUpper::before {
+        content: "A.";
+        background-color: #b71b27;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 15px;
+        top: 40px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+    }
+    .sircleLower::before {
+        content: "Q.";
+        background-color: #333;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 15px;
+        top: 135px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+    }
+    .sircleBottom::before {
+        content: "A.";
+        background-color: #b71b27;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 15px;
+        top: 205px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .contactSec {
+        height: 930px;
+        margin-bottom: 126px;
+    }
+    .contactSec h1 {
+        margin-top: 80px;
+        padding-top: 16px;
+    }
+    .contactSec .titleLine {
+        margin-bottom: 0px;
+    }
+    .contactSec form {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formRow {
+        margin: 0 12px;
+    }
+    .formLabel {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 24px auto 0;
+    }
+    .requiredLabel {
+        font-size: 10px;
+        width: 40px;
+        height: 18px;
+        margin: 0 4px;
+        line-height: 18px;
+    }
+    .customRadio {
+        font-size: 14px;
+        margin: 0 20px;
+    }
+    .radioWapper {
+        margin-top: 16px;
+        text-align: center;
+    }
+    .customRadio .radioMark {
+        display: inline-block;
+        background-color: #fff;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+    .customRadio input[type="radio"]:checked + .radioMark::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        background-color: #333;
+        border-radius: 50%;
+    }
+    textarea {
+        height: 120px;
+        width: 351px;
+        margin-top: 8px;
+    }
+    input[type="text"],input[type="tel"] {
+        width: 351px;
+        height: 30px;
+        margin-top: 8px;
+    }
+    input,#addressBottom {
+        width: 351px;
+        height: 30px;
+        margin-top: 8px;
+    }
+    .contactSec input {
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .postMark::before {
+        content: "〒";
+        font-size: 14px;
+        margin-right: 4px;
+    }
+    .addressWrapper {
+        text-align: left;
+    }
+    #addressTop {
+        width: 125px;
+        height: 30px;
+        margin: 8px 0 0 0;
+    }
+    #addressBottom {
+        margin: 8px 0 0 0;
+    }
+    .inquiryText {
+        margin: 0 auto;
+    }
+    button {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 24px auto 16px;
+        width: 200px;
+        height: 48px;
+        text-align: center;
+    }
+    .submitText::after {
+        content: "";
+        display: inline-block;
+        margin-left: 4px;
+        border-color: #fff;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid #fff;   
+    }
+    .radioMark:hover {
+        outline: none;
+    }
+
+    .bottomSec {
+        height: 0;
+    }
+    .bottomSec:hover {
+        opacity: 100%;
+    }
+    .pageTop {
+        width: 46px;
+        height: 46px;
+        position: absolute; 
+        right: 12px;
+        bottom: -1px;
+        background-color: #333;
+    }
+    .pagetopBtn {
+        height: 46px;
+        width: 46px;
+    }
+    .pagetopBtn::before {
+        content: "";
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(-45deg);
+    }
+    footer {
+        font-size: 12px;
+        height: 45px;
+        padding-top: 16px;
+    }
+
+    /* メニューを画面上部に固定表示しています */
+    .gMenu {
+    position: fixed;
+    right: 0px;
+    top: 7px;
+    width: 100%;
+    z-index: 100;
+    }
+    /* メニューアイコンを画面右上に固定しています */
+    .gMenu .menuIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding-top: 5px;
+    height: 12px;
+    }
+    /* メニューアイコン（三本線）の真ん中の線です */
+    .gMenu .menuIcon .navicon {
+    background: #b71b27; /* 色は自由に変更可能です */
+    display: block;
+    height: 2px; /* 太さ */
+    width: 31px; /* 長さ */
+    position: relative;
+    transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+    }
+    /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+    .gMenu .menuIcon .navicon::before,
+    .gMenu .menuIcon .navicon::after {
+    background: #b71b27; /* 色は自由に変更可能です */
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+    width: 100%;
+    }
+    .gMenu .menuIcon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+    .gMenu .menuIcon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+    /* 表示されるメニューです */
+    .gMenu .menuSp {
+    background-color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    max-height: 0; /* ★最初は高さを0にして非表示状態に */
+    transition: max-height .6s; /* 表示されるときのアニメーション */
+    text-align: center;
+    }
+    /* メニュー部分のデザインです */
+    .gMenu .menuSp li:first-of-type {
+    padding-top: 50px;
+    }
+    .gMenu .menuSp li:last-of-type {
+    padding-bottom: 300px;
+    }
+    .gMenu .menuSp li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    /* チェックボックスは常に非表示です */
+    .gMenu .menuBtn {
+    display: none;
+    }
+    /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+    .gMenu .menuBtn:checked ~ .menuSp {
+    max-height: 530px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+    transition: max-height .6s;
+    }
+    /* メニューボタンの中央の線を非表示に */
+    .gMenu .menuBtn:checked ~ .menuIcon .navicon {background: transparent;}
+
+    /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+    .gMenu .menuBtn:checked ~ .menuIcon .navicon::before {transform: rotate(-45deg);top: 0;}
+    .gMenu .menuBtn:checked ~ .menuIcon .navicon::after {transform: rotate(45deg);top: 0;}
+    .mainArea h1 {
+        font-size: 28px;
+    }
+}
