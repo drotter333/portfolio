@@ -1,0 +1,899 @@
+@charset "utf-8";
+.hero {
+    background-image: url('../images/heroTaipeipc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.taipeiLogo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: 360px;
+    margin-right: auto;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 103px;
+    margin-right: auto;
+}
+.snsLink:hover:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.taipeiInfo {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #fff;
+    width: 467px;
+    padding-top: 90px;
+    margin-right: 100px;
+}
+.flexTaipei {
+    display: flex;
+}
+.attraction h2 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 48px;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: left 103px bottom;
+    background-size: 500px;
+    padding-left: 182px;
+    margin-bottom: 80px;
+    padding-bottom: 24px;
+}
+.attraction h2 span {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+}
+.attraction h3 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 103px;
+    margin-bottom: 20px;
+}
+.attractionContent {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+.contentImg {
+    width: 600px;
+}
+.attractionInfo {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 360px;  
+    line-height: 32px;
+    background-color: rgba(108, 186, 216, .2);
+    padding: 20px 40px 20px 40px;
+}
+.attractionSub {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.subImg1, .subImg2 {
+    width: 290px;
+}
+.subImg1 {
+    margin-right: 20px;
+}
+.attractionSub p {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 160px;  
+    line-height: 32px;
+    background-color: rgba(108, 186, 216, .2);
+    padding: 40px 40px 100px 40px;
+    margin-left: 100px;
+    text-align: center;
+}
+.attractionSub p span {
+    font-weight: bold;
+    line-height: 80px;
+}
+.border {
+    border-bottom: 1px solid;
+    width: 480px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nightmarket h2 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 48px;
+    text-align: end;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: right 103px bottom;
+    background-size: 500px;
+    padding-right: 182px;
+    margin-bottom: 120px;
+    padding-bottom: 24px;
+}
+.nightmarket span {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+}
+.nightmarketInfo {
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.nightmarketInfo p {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+    width: 420px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding-top: 36px;
+}
+.gourmet {
+    width: 540px;
+    height: 264px;
+}
+.nightmarketLink {
+    display: flex;
+    gap: 115px;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-left: 58px;
+}
+.linkImg1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: fit-content; 
+}   
+.linkImg1::after {
+    content: "";
+    background-image: url('../images/btnFramepc.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    height: 90px;
+    margin-left: -140px;
+}
+.linkImg2 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    width: fit-content; 
+}   
+.linkImg2::after {
+    content: "";
+    background-image: url('../images/btnFramepc.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    height: 90px;
+    margin-left: -170px;
+}
+.nightmarket0 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.nightmarket1 {
+    display: flex;
+    gap: 125px;
+    justify-content: center;
+}
+.access h2 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 48px;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: left 103px bottom;
+    background-size: 500px;
+    padding-left: 220px;
+    margin-bottom: 80px;
+    padding-bottom: 24px;
+}
+.access h2 span {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+}
+.access h3 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+    width: 384px;
+    margin-left: 175px;
+    margin-right: auto;
+    margin-bottom: 121px;
+    border-bottom: solid 1px;
+    padding-bottom: 40px;
+}
+.centerContainer {
+    text-align: center;
+}
+.accessImg {
+    width: 1160px;
+    margin-bottom: 80px;
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 60px;
+}
+.title {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+    width: 331px;
+    margin-bottom: 40px;
+}
+.flexContainer span {
+    font-weight: bold;
+}
+.textInfo {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 24px;
+    width: 400px;
+    line-height: 40px;
+}
+.cardContainer {
+    text-align: center;
+    margin-left: 500px;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.card {
+    width: 246px;
+}
+.spImg {
+    display: none;
+}
+/* ↓ 共通部分 ヘッダー（PC版） ↓ */
+.headerNav {
+    background-color: rgba(0, 0, 0, .25);
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1000;
+}
+.navList {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList ul {
+    display: flex;
+}
+.navList ul li {
+    color: #fff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+/* ↑ 共通部分 ヘッダー（PC版） ↑ */
+/* ↓ 共通部分 フッター（PC版） ↓ */
+footer {
+    background-color: #007AB7;
+    width: 100%;
+    padding: 40px 0 20px;
+}
+.footerImg {
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.footerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+.footerNav ul {
+    width: 25%;
+    margin-left: 103px;
+}
+.footerNav ul li {
+    color: #fff;
+    font-family: 'Noto Sans JP';
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #fff;
+}
+.logo img {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+}
+.icons {
+    margin-right: 103px;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.underLine {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #03A9F4;
+}
+footer p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center; 
+}
+.onlySp {
+    display: none;
+}
+/* ↑ 共通部分 フッター（PC版） ↑ */
+/* ↓ ローディング画面 ↓ */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #007AB7;
+    z-index: 10000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.loading.fadeout {
+    opacity: 0;
+}
+.loadingImg {
+    position: fixed;
+    left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+.content {
+    display: none;
+}
+.pop {
+    display: block;
+}
+/* ↑ ローディング画面 ↑ */
+/* ↓ モーダル機能（PC版） ↓ */
+.modalMain {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 40px;
+}
+.modalMain.active {
+    display: flex;
+}
+.modalContainer {
+    background: rgba(0, 122, 183, 0.9);
+    color: #fff;
+    position: relative;
+    width: 1366px;
+    height: 604px;
+}
+.modalClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.modalContent h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.modalContent p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    line-height: 32px;
+}
+.modalImg  {
+    width: 600px;
+    height: 468px;    
+    margin-left: 50px;
+}
+.modalFlex {
+    display: flex;
+}
+.modalInfo {
+    width: 500px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.modalTime {
+    text-align: center;
+    margin-left: 60px;
+}
+/* ↑ モーダル ↑ */
+.breadCrumb {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    margin-bottom: 80px;
+}
+.breadCrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.breadCrumb li {
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+.breadCrumb li a:hover {
+    border-bottom: double 1px;
+}
+.breadCrumb li:last-child {
+    font-weight: bold;
+    color: #007AB7;
+}
+.breadCrumb li:not(:last-child)::after {
+    content: ">";
+    margin-left: 15px;
+    color: #333;
+}
+.backTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9000;
+    margin: 20px;
+    display: none;
+}
+.backTop:hover {
+    opacity: 1.7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.spLogo {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .onlyPC {
+        display: none;
+    }
+    .hero {
+        background-image: url('../images/SPheroTaipei.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding-top: 0;
+        height: 677px;
+    }
+    .icon {
+        margin-left: 20px;
+        gap: 20px;
+    }
+    .taipeiLogo {
+        width: 199px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px; 
+    }
+    .taipeiInfo {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 19px;
+        color: #fff;
+        width: 247px;
+        margin-right: 0;
+        padding-top: 130px;
+        margin-right: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .attraction {
+        margin-bottom: 100px;
+    }
+    .attraction h2 span {
+        font-size: 12px;
+    }
+    .attraction h2{
+        font-size: 24px;
+        text-align: center;
+        background-position: center bottom;
+        padding-right: 0;
+        margin-bottom: 48px;
+        background-size: 220px;
+        padding-bottom: 8px;
+        padding-left: 0;
+    }
+    .attraction h3 {
+        font-size: 24px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .attractionContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contentImg {
+        width: 295px;
+    }
+    .attractionInfo {
+        font-size: 12px;
+        width: 295px;
+        height: 246px;
+        line-height: 19px;
+        background-color: rgba(108, 186, 216, .2);
+        padding: 8px 36px 8px 36px;
+    }
+    .attractionSub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .attractionImg {
+        display: none;
+    }
+    .spImg {
+        display: block;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .spImg1 {
+        width: 137px;
+    }
+    .spImg2 {
+        width: 137px;
+    }
+    .attractionSub p {
+        font-size: 12px;
+        width: 295px;
+        height: 53px;
+        line-height: 16px;
+        background-color: rgba(108, 186, 216, .2);
+        padding: 8px 21px 33px 21px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .attractionSub p span {
+        font-weight: bold;
+        line-height: 25px;
+    }
+    .attractionSub {
+        margin-bottom: 40px;
+    }
+    .border {
+        border-bottom: 1px solid;
+        width: 223px;
+        margin-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nightmarket h2 span {
+            font-size: 12px;
+        }
+    .nightmarket h2{
+        font-size: 24px;
+        text-align: center;
+        background-position: center bottom;
+        padding-right: 0;
+        margin-bottom: 60px;
+        background-size: 220px;
+        padding-bottom: 8px;
+        padding-left: 0;
+    }
+    .nightmarketInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+    .nightmarketInfo p {
+        font-size: 12px;
+        line-height: 19px;
+        width: 222px;
+        height: 135px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .gourmet {
+        width: 183px;
+        height: 122px;
+    }
+    .nightmarketLink {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+    .linkImg1 {
+        font-size: 12px;
+    }
+    .linkImg2 {
+        font-size: 12px;
+    }
+    .linkImg1::after { 
+        width: 131px;
+        height: 48px;
+        margin-left: -90px;
+    }
+    .linkImg2::after {
+        width: 131px;
+        height: 48px;
+        margin-left: -110px;
+    }   
+    .nightmarket0 {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+    .nightmarket1 {
+        gap: 50px;
+    }
+    .links {
+        margin-left: 35px;
+    }
+    .access h2 span {
+        font-size: 12px;
+    }
+    .access h2{
+        font-size: 24px;
+        text-align: center;
+        background-position: center bottom;
+        padding-right: 0;
+        margin-bottom: 40px;
+        background-size: 220px;
+        padding-bottom: 8px;
+        padding-left: 0;
+    }
+    .access h3 {
+        font-size: 12px;
+        width: 192px;
+        padding-bottom: 12px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .accessImg {
+        width: 335px;
+        margin-bottom: 40px;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .title {
+    font-size: 12px;
+    width: 156px;
+    margin-bottom: 12px;
+    }
+    .textInfo {
+        font-size: 12px;
+        width: 223px;
+        line-height: 19px;
+    }
+    .cardContainer {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .card {
+        width: 95px;
+    }
+ /* ↓ ドロワーメニュー ↓ */
+    #openNav {
+        position: fixed;
+        right: 4px;
+        top: 4px;
+    }
+    #drawer {
+        position: fixed;
+        right: -225px;
+        top: 0;
+        width: 225px;
+        height: 100vh;
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(0, 122, 183, .9);
+        transition: transform 0.3s;
+        text-align: center;
+        z-index: 90;
+    }
+    .show {
+        transform: translate3d(-225px, 0, 0);
+    }
+    .drawerImg {
+        display: flex;
+        justify-content: space-between;
+        margin: 4px;
+        margin-bottom: 84px;
+    }
+    #drawer img {
+        height: 100%;
+    }
+    #drawer h1 {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+    .top {margin-bottom: 40px;}
+    .pei, .chu {margin-bottom: 20px;}
+    .nan, .pol {margin-bottom: 40px;}
+    #drawer a { border-bottom: 1px solid #fff;}
+    /* ↑ ドロワーメニュー ↑ */
+    /* ↓ 共通部分 フッター（スマホ版） ↓ */
+    footer {
+        padding: 20px 0 12px;
+    }
+    .footerNav {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .footerNav ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footerNav ul li {
+        font-size: 12px;
+        margin-top: 12px;
+        padding-bottom: 6px;
+    }
+    .flag img {
+        margin: 0 auto;
+    }
+    .logo img {
+        position: absolute;
+        left: 15%;
+        top: 87%;
+    }
+    .icons img {
+        display: flex;
+    }
+    .icons {
+        margin: 40px auto 0;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .underLine {
+        margin: 12px 0;
+    }
+    footer p {
+        font-size: 10px;
+        text-align: center; 
+    }
+    .headerNav {
+        display: none;
+    }
+    .onlySp {
+        display: block;
+    }
+    .footerImg {
+        display: none;
+    }
+    /* ↑ 共通部分 フッター（スマホ版） ↑ */
+    /* ↓ モーダル機能（スマホ版） ↓ */
+    .onlyPc {
+        display: none;
+    }
+    .modalMain {
+        padding: 0;
+    }
+    .modalContent h1 {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .modalContent p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .modalClose {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+    }
+    .modalImg {
+        width: 335px;
+        height: 223px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .modalFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    .modalInfo {
+        width: 303px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .modalContainer {
+        width: 375px;
+        height: 667px;
+    }
+    .modalTime {
+        margin-left: 0;
+    }
+    .modalImages {
+        text-align: center;
+    }
+    /* ↑ モーダル ↑ */
+    .breadCrumb {
+        margin-bottom: 20px;
+    }
+    .breadCrumb li {
+        font-size: 16px;
+    }
+    .backTop {
+        width: 48px;
+        height: 48px;
+    }
+    .spLogo {
+        position: absolute;
+        display: block;
+        padding: 3px 0 0 20px;
+    }
+}
