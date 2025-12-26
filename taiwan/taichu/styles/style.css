@@ -1,0 +1,711 @@
+@charset "utf-8";
+
+section, .history {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: justify;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ↓ ローディング画面 ↓ */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #007AB7;
+    z-index: 10000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.loading.fadeout {
+    opacity: 0;
+}
+.loadingImg {
+    position: fixed;
+    left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+.content {
+    display: none;
+}
+.pop {
+    display: block;
+}
+/* ↑ ローディング画面 ↑ */
+
+/* ↓ 共通部分 ヘッダー ↓ */
+.headerNav {
+    background-color: rgba(0, 0, 0, .25);
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1000;
+}
+.navList {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList ul {
+    display: flex;
+}
+.navList ul li {
+    color: #fff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+/* ↑ 共通部分 ヘッダー ↑ */
+
+.topSec {
+    width: 100%;
+    height: 768px;
+    background-image: url("../images/heroPc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.topSec p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    width: 34%;
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.taichu {
+    position: absolute;
+    top: 12%;
+    left: 28%;
+}
+.topIcons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 66.5%;
+    left: 7%;
+}
+.topIcons img {
+    margin-bottom: 40px;
+}
+.history {
+    width: 100%;
+    padding: 20px 103px;
+    border-bottom: 1px solid #000;
+}
+
+.secHead {
+    background-image: url("../images/headbgPc.png");
+    background-repeat: no-repeat;
+    width: 530px;
+    height: 96px;
+  }
+.secHead h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.secHead h1 span {
+    font-size: 24px;
+    margin-left: 12px;
+}
+.museumSec .secHead {
+    margin-left: auto;
+}
+
+.mainArea h3 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+.attractionSec {
+    padding: 20px 7% 80px;
+}
+.attractionSec img {
+    max-width: 100%;
+}
+.articleTop  {
+    display: flex;
+    margin-top: 20px;
+}
+.articleBot {
+    display: flex;
+    margin-top: 40px;
+    max-height: 144px;
+}
+.articleTop p {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 32px;
+    background-color: rgba(237, 161, 132, .20);
+    height: 360px;
+}
+.articleBot p {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 32px;
+    background-color: rgba(237, 161, 132, .20);
+    width: 100%;
+}
+.border {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-bottom: 1px solid #000;
+}
+
+.museumSec {
+    padding: 20px 9% 80px;
+    font-size: 18px;
+}
+.museImages {
+    margin-top: 20px;
+    width: 100%;
+}
+.museImages img {
+    width: 100%;
+}
+.topL, .topR, .botL, .botR {
+    display: flex;
+    flex-direction: column;
+}
+.museumSec button {
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 29px 36px;
+    outline: 4px solid rgba(237, 161, 132, .2)
+}
+.museumSec .museumText {
+    display: flex;
+    align-items: center;
+    margin: 80px 20px 0;
+    width: 420px;
+    height: 110px;
+    line-height: 28.8px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.museTop, .museBot {
+    display: flex;
+    justify-content: space-between;
+}
+.museTop span, .museBot span {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.museTop {
+    margin-top: 80px;
+}
+.museBot {
+    margin-top: 60px;
+}
+.museTop h3, .museBot h3 {
+    font-size: 36px;
+}
+
+.sweetsSec {
+    padding: 20px 9% 80px;
+}
+.sweetsText {
+    margin: 80px 55px;
+    width: 420px;
+    position: relative;
+}
+.sweetsText h3 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.sweetsText p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 32px;
+}
+.pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.pageTop.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.photosTop {
+    display: flex;
+    justify-content: space-around;
+}
+.photosTop p {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 64px 40px;
+    width: 100%;
+    max-width: 500px;
+}
+.photosMid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.photosBot {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.photosBot p {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 64px 40px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.photosTop img, .photosBot img {
+    height: 100%;
+}
+
+/* ↓ 共通部分 フッター ↓ */
+footer {
+    background-color: #007AB7;
+    width: 100%;
+    padding: 40px 0 20px;
+}
+.footerImg {
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.footerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: relative;
+}
+.footerNav ul {
+    width: 25%;
+}
+.footerNav ul li {
+    color: #fff;
+    font-family: 'Noto Sans JP';
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #fff;
+}
+.logo img {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+}
+.icons {
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+}
+.underLine {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #03A9F4;
+}
+footer p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center; 
+}
+/* ↑ 共通部分 フッター ↑ */
+
+/* ↓ モーダル ↓ */
+.modalMain {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 40px;
+    overflow: auto;
+}
+.modalMain.active {
+    display: flex;
+}
+.modalContainer {
+    background: rgba(0, 122, 183, .9);
+    color: #fff;
+    width: 900px;
+    position: relative;
+    padding: 20px 40px;
+    max-height: 99vh;
+    overflow: auto;
+}
+.modalContainer img {
+    margin: 0;
+}
+.modalClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.modalContent h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.modalContent p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38.4px;
+}
+.modalContent img {
+    margin: 40px 0;
+}
+.modalContent .modalText {
+    margin-bottom: 20px;
+}
+.modalImages {
+    display: flex;
+    justify-content: space-around;
+}
+/* ↑ モーダル ↑ */
+
+.onlySp {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .onlySp {
+        display: block;
+    }
+    .onlyPc {
+        display: none;
+    }
+    .footerImg {
+        display: none;
+    }
+    .topLogo {
+        padding: 2px 0 0 20px;
+        transform: scale(1.1);
+    }
+    .taichuSp {
+        margin: 0 auto;
+        padding-top: 69px;
+    }
+    .headerNav, img{
+        display: none;
+    }
+    .articleTop, .articleBot {
+        display: block;
+        width: 295px;
+        margin: 0 auto;
+    }
+    .museTop, .museBot, .photosTop, .photosBot {
+        display: block;
+    }
+    .articleTop p, .articleBot p {
+        margin: 20px auto;
+        padding: 8px 36px;
+        width: 100%;
+        height: 100%;
+        line-height: 19.2px;
+    }
+    .topSec {
+        width: 375px;
+        height: 667px;
+        background-image: url("../images/heroSp.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .topIcons {
+        top: 65%;
+        left: 5%;
+    }
+    .topIcons img {
+        display: flex;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .history .onlySp {
+        display: inline;
+    }
+
+    .secHead {
+        background-image: url("../images/headbgSp.png");
+        background-position: center;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .secHead h1 {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+    .secHead h1 span {
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .border {
+        width: 223px;
+        margin: 40px auto;
+    }
+    .attractionSec .border {
+        padding-top: 80px;
+    }
+    .attractionSec, .museumSec, .sweetsSec {
+        padding: 0;
+    }
+    .sweetsText, .museumSec p, .topSec p {
+        margin: 0;
+        width: auto;  
+    }
+    .topSec p, .articleTop p, .articleBot p,
+    .sweetsText p, .photosTop p, .photosBot p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .topSec p {
+        top: 95%;
+        left: 60%;
+        width: 247px;
+    }
+    .history {
+        padding: 8px 20px;
+    }
+
+    .attractionSec img {
+        margin: 20px auto 0;
+    }
+
+    .museumSec img {
+        margin: 8px auto 0;
+    }
+    .mainArea h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .museumSec .museumText {
+        width: 60%;
+        height: 100%;
+        margin: 60px auto 0;
+        padding: 12px 0;
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .topL, .topR, .botL, .botR {
+        margin: 40px 40px;
+    }
+    .museTop, .museBot {
+        margin: 0 auto;
+    }
+    .museTop {
+        margin-top: 60px;
+    }
+    .museTop h3, .museBot h3 {
+        font-size: 12px;
+    }
+    .museumSec span {
+        margin-top: 4px;
+    }
+    .museumSec button {
+        font-size: 12px;
+        padding: 12px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    .museImages {
+        margin-top: 0;
+    }
+
+    .sweetsText {
+        margin: 60px auto 0;
+        width: 60%;
+    }
+    .sweetsText h3 {
+        font-size: 24px;
+        padding-bottom: 12px;
+    }
+    .sweetsText p {
+        margin-top: 12px;
+    }
+    .photosTop p, .photosBot p {
+        width: 223px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .sweetsSec img {
+        margin: 20px auto 0;
+    }
+    .photosMid {
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .photosMid img {
+        margin: 0;
+    }
+    .photosBot {
+        margin-top: 20px;
+    }
+
+    .pageTop {
+    bottom: 4px;
+    right: 4px;
+    }
+
+    /* ↓ ドロワーメニュー ↓ */
+    #openNav {
+        position: fixed;
+        right: 4px;
+        top: 4px;
+    }
+    #drawer {
+        position: fixed;
+        right: -225px;
+        top: 0;
+        width: 225px;
+        height: 667px;
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(0, 122, 183, .9);
+        transition: transform 0.3s;
+        text-align: center;
+    }
+    .show {
+        transform: translate3d(-225px, 0, 0);
+    }
+    .drawerImg {
+        display: flex;
+        justify-content: space-between;
+        margin: 4px;
+        margin-bottom: 84px;
+    }
+    #drawer img {
+        height: 100%;
+    }
+    #drawer h1 {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+    .top {margin-bottom: 40px;}
+    .pei, .chu {margin-bottom: 20px;}
+    .nan, .pol {margin-bottom: 40px;}
+    #drawer a { border-bottom: 1px solid #fff;}
+    /* ↑ ドロワーメニュー ↑ */
+
+    /* ↓ 共通部分 フッター（スマホ版） ↓ */
+
+    footer {
+        padding: 20px 0 12px;
+    }
+    .footerNav {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .footerNav ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footerNav ul li {
+        font-size: 12px;
+        margin-top: 12px;
+        padding-bottom: 6px;
+    }
+    .flag img {
+        margin: 0 auto;
+    }
+    .logo img {
+        position: absolute;
+        left: 15%;
+        top: 87%;
+    }
+    .icons img {
+        display: flex;
+    }
+    .icons {
+        margin: 40px auto 0;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .underLine {
+        margin: 12px 0;
+    }
+    footer p {
+        font-size: 10px;
+        text-align: center; 
+    }
+
+    /* ↑ 共通部分 フッター（スマホ版） ↑ */
+
+    /* ↓ モーダル ↓ */
+    .modalMain {
+        padding: 0;
+    }
+    .modalContainer {
+        padding: 40px 20px;
+    }
+    .modalContainer img {
+        margin: 0;
+    }
+    .modalContent h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .modalContent img {
+        margin: 40px 0;
+    }
+    .modalContent .modalText {
+        margin-bottom: 20px;
+    }
+    .modalContent p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .modalClose {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+    }
+    /* ↑ モーダル ↑ */
+
+    .loadingImg {
+        display: flex;
+        width: 75%;
+    }
+}
