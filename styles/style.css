@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+body {
+    background-color: whitesmoke;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px auto;
+}
+article {
+    flex-basis: 920px;
+    background-color: white;
+    padding: 40px;
+    margin-right: 40px;
+    border-radius: 12px;
+}
+aside {
+    flex-basis: 284px;
+    height: 100%;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1 {
+    background-color: white;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 0;
+}
+header {
+    color: white;
+    background-color: steelblue;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header li {
+    font-size: 20px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+}
+.liFirst {
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+
+article h2 {
+    font-size: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid steelblue;
+}
+article time {
+    display: block;
+    font-size: 16px;
+    color: dimgray;
+    margin-top: 10px;
+}
+article time::before {
+    content: "ポートフォリオ作成日";
+    color: white;
+    background-color: steelblue;
+    padding: 2px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.articleNav {
+    outline: 1px solid dimgray;
+    margin: 20px auto;
+    width: 80%;
+}
+.articleNav h3 {
+    padding: 4px;
+    text-align: center;
+    color: white;
+    background-color: lightsteelblue;
+    border-bottom: 1px solid dimgray;
+}
+.articleNav ul {
+    background-color: lavender;
+    padding: 10px;
+}
+.articleNav li {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid dimgray;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.articleSec h3 {
+    font-size: 20px;
+    padding: 4px;
+    border-bottom: 1px solid dimgray;
+    border-left: 4px lightsteelblue solid;
+}
+.articleSec img {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto 0;
+    outline: 1px solid black;
+}
+.articleSec a {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+    color: steelblue;
+}
+.point {
+    background-color: ghostwhite;
+    outline: 2px solid lightseagreen;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+.point h4 {
+    color: lightseagreen;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed lightseagreen;
+}
+.point ul {
+    margin-top: 8px;
+}
+.point li {
+    margin-top: 4px;
+}
+
+.stance h3, .attention h3 {
+    font-size: 24px;
+    color: white;
+    background-color: steelblue;
+    padding: 8px;
+}
+.stance p, .attention p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0 20px;
+}
+
+footer {
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: 12px;
+}
+
+.asideArea {
+    width: 80%;
+    margin: 0 auto;
+}
+.asideArea h3 {
+    font-size: 20px;
+    color: white;
+    background-color: lightsteelblue;
+    padding: 8px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.asideArea p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.asideArea ul {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 4px 4px 8px 4px;
+    background-color: lavender;
+    outline: 2px dashed lightsteelblue;
+}
+.asideArea li {
+    margin-top: 8px;
+}
+.asideArea h4 {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: block;
+        width: 100%;
+    }
+    article {
+        margin: 0;
+        padding: 10px;
+    }
+    header li {
+        font-size: 12px;
+    }
+    .articleSec img {
+        height: 200px;
+    }
+}
