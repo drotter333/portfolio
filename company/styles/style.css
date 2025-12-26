@@ -1,0 +1,438 @@
+@charset "utf-8";
+html {
+    scroll-behavior: smooth;
+}
+.spOnly {
+    display: none;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    background: rgba(30, 30, 30, 0.95);
+    z-index: 1000;
+    opacity: 1;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadingText {
+    color: #fff;
+    font-size: 24px;
+}
+.loading.fadeout {
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+.content {
+    display: none;
+}
+.pop {
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.9);
+    width: 100%;
+    height: 57px;
+}
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.headerNav ul {
+    display: flex;
+    gap: 60px;
+}
+.headerNav a {
+    position: relative;
+    display: inline-block;
+}
+.headerNav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: lightseagreen;
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    transition: .3s ease 0s;
+}
+.headerNav a:hover::before {
+    width: 100%;
+}
+
+article h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+article h1 span {
+    font-size: 26px;
+    margin-left: 12px;
+}
+article h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.companyText {
+    margin-right: 20px;
+}
+.recruitText {
+    margin-right: 40px;
+}
+
+.heroSec {
+    position: relative;
+}
+.heroSec h1 {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    color: #fff;
+    font-size: 56px;
+    text-shadow: 3px 3px rgba(30, 30, 30, 0.9);
+}
+.heroSec h1 span {
+    font-size: 68px;
+}
+#img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+#prev, #next {
+    position: absolute;
+}
+#prev {
+    top: 50%;
+    left: 1%;
+}
+#next {
+    top: 50%;
+    right: 1%;
+}
+
+.informationSec {
+    padding: 20px 15%;
+}
+.companyContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news {
+    width: 80%;
+    margin: 0 auto;
+}
+.newsColumns {
+    display: flex;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.5);
+    padding-bottom: 10px;
+    margin: 10px auto;
+}
+.news dl {
+    margin-top: 20px;
+}
+.news dt {
+    font-size: 10px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.news dd {
+    font-size: 12px;
+}
+.news a:hover {
+    color: lightseagreen;
+}
+
+
+.recruitSec {
+    padding: 20px 15%;
+}
+.recruitContainer {
+    display: flex;
+}
+.recruitSec button {
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+.recruitSec button:hover {
+    background-color: lightseagreen;
+}
+
+.serviceSec {
+    text-align: center;
+    padding: 20px 10%;
+    margin-bottom: 20px;
+}
+.serviceSec h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 80px 30px;
+}
+.serviceTop, .serviceBot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.serviceTop {
+    margin: 40px 0;
+}
+.consumer::before {
+    background-image: url("../images/consumer.png");
+}
+.application::before {
+    background-image: url("../images/application.png");
+}
+.shopping::before {
+    background-image: url("../images/shopping.png");
+}
+.movie::before {
+    background-image: url("../images/movie.png");
+}
+.consumer::before, .application::before,
+.shopping::before, .movie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+.consumer:hover, .application:hover,
+.shopping:hover, .movie:hover  {
+    transform: scale(1.05);
+}
+.consumer, .application, .shopping, .movie {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    padding: 10px;
+    outline: 1px solid #000;
+    border-radius: 3%;
+}
+
+footer {
+    color: #fff;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    padding: 20px 0 10px;
+}
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+footer h3 {
+    font-weight: bold;
+    text-align: center;
+}
+.footerColumns {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.footerColumns ul {
+    margin-top: 20px;
+}
+.footerColumns ul li {
+    margin-top: 6px;
+}
+.footerColumns a {
+    transition: 0.3s ease;
+}
+.footerColumns a:hover {
+    color: lightseagreen
+}
+
+.border {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin: 20px 0 10px;
+}
+.borderBrack {
+    width: 50%;
+    border-bottom: 1px solid #000;
+    margin: 40px auto 0;
+}
+
+@media screen and (max-width:768px) {
+    .spOnly {
+        display: block;
+    }
+    .headerNav, .footerColumns {
+        display: none;
+    }
+    header {
+        position: fixed;
+        z-index: 10;
+        background-color: #000;
+        width: 100%;
+        height: 70px;
+    }
+    header h1 {
+        margin-left: 16px;
+    }
+    article h1 {
+        font-size: 36px;
+    }
+    article h1 span {
+        font-size: 24px;
+    }
+    article h2 {
+        font-size: 20px;
+    }
+    article p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .heroSec h1 {
+        font-size: 24px;
+        top: 70%;
+    }
+    .heroSec h1 span {
+        font-size: 28px;
+    }
+    #img {
+        height: 70vh;
+        padding-top: 70px;
+    }
+    #prev, #next {
+        width: 10%;
+    }
+    .informationSec, .recruitSec, .serviceSec {
+        padding: 20px 5%;
+    }
+    .companyContainer, .recruitContainer, .serviceTop, .serviceBot {
+        display: block;
+    }
+    .companyContainer {
+        width: 100%;
+    }
+    .companyContainer img, .recruitContainer img {
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin: 8px auto 0;
+    }
+    .recruitSec button {
+        display: block;
+        margin-left: auto;
+        padding: 15px;
+    }
+    .companyText, .recruitText {
+        margin: 0;
+    }
+    .serviceTop {
+        margin: 0;
+    }
+    .consumer, .application, .shopping, .movie {
+        margin: 0 auto 20px;
+    }
+
+    .news {
+        width: 100%;
+    }
+    .newsColumns {
+        display: block;
+        margin: 6px auto;
+        padding-bottom: 6px;
+    }
+    .newsColumns dt {
+        padding-bottom: 4px; 
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+    footer .spOnly {
+        font-size: 16px;
+        text-align: center;
+    }
+    .border {
+        margin: 10px 0;
+    }
+
+    /* ドロワーメニュー */
+    #openNav {
+        position: fixed;
+        z-index: 100;
+        right: 8px;
+        top: 8px;
+    }
+    #closeNav {
+        margin: 8px;
+        margin-left: auto;
+    }
+    #drawer {
+        position: fixed;
+        z-index: 100;
+        top: -90vh;
+        right: 0;
+        width: 100vw;
+        height: 90vh;
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(30, 30, 30, .9);
+        transition: 0.6s ease;
+    }
+    .show {
+        transform: translateY(90vh);
+    }
+    .drawerNav {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .drawerNav h1 {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .drawerNav h2 {
+        font-size: 28px;
+        margin-top: 20px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #000;
+    }
+    .drawerNav ul {
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+    .drawerNav li {
+        margin-bottom: 4px;
+    }
+    /* ドロワーメニュー */
+    .hidden {
+        display: none;
+    }
+}
