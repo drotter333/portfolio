@@ -182,6 +182,19 @@ footer {
 .asideArea h4 {
     margin-top: 20px;
 }
+.link {
+    text-align: center;
+}
+.link p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.link a {
+    margin-top: 4px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid steelblue;
+    color: steelblue;
+}
 
 @media screen and (max-width: 768px) {
     .main {
