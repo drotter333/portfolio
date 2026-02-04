@@ -28,10 +28,17 @@
     <?php
     $pdo = new PDO(ACCESSDB, DBID, DBPW);
 
+    //  .の意味：（テーブル.列）
+    // 取得したいデータ：select products.id as product_id, products.name, products.price, SUM(purchase_detail.count) AS total_count
+    // どのテーブルから：from purchase_detail
+    // joinの意味：複数のテーブルを、共通の列を使って合体させる
+    // 2つのテーブルをidを使って結合：join products on purchase_detail.product_id = products.id
+    // group byの意味：同じ値の行をひとまとめにする
+    // 商品ごとにまとめる：group by purchase_detail.product_id, products.name, products.price
     $sql = $pdo->query('select products.id as product_id, products.name, products.price,
-                        SUM(purchase_detail.count) AS total_count
-                        from purchase_detail join products
-                        on purchase_detail.product_id = products.id
+                        SUM(purchase_detail.count) as total_count
+                        from purchase_detail
+                        join products on purchase_detail.product_id = products.id
                         group by purchase_detail.product_id, products.name, products.price
                         order by total_count desc limit 6');
 
