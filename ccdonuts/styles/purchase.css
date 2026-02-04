@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+    .purchaseArea {
+        padding: 0 20px;
+    }
+    .purchaseArea .mainTitle {
+        margin-bottom: 60px;
+    }
+    .purchaseRow {
+        display: flex;
+        margin-bottom: 8px;
+    }
+    .purchaseRow .sum {
+        font-weight: bold;
+    }
+    .purchaseTitle {
+        text-align: center;
+        color: #7f5539;
+        font-size: 12px;
+    }
+    .purchaseTitle p {
+        margin-bottom: 20px;
+    }
+    .purchaseRow dt {
+        font-size: 12px;
+        font-weight: 400;
+        color: #7f5539;
+        width: 48px;
+        text-align: left;
+        margin-right: 8px;
+    }
+    .purchaseRow dd {
+        color: #000;
+        font-size: 12px;
+        border-left: 2px solid #f7d1cd;
+        padding-left: 12px;
+    }
+    dl {
+        border-top: 1px solid #f7d1cd;
+        border-bottom: 1px solid #f7d1cd;
+        padding-top: 8px;
+        margin-bottom: 20px;  
+    }
+    .purchaseArea .submit{
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .purchaseArea .submit input {
+        background-color: #7f5539;
+        margin-bottom: 20px;
+        width: 160px;
+        height: 48px;
+    }
+    .purchaseArea a {
+        color: #7f5539;
+        font-size: 12px;
+    }
+    .enter {
+        border-top: 1px solid #f7d1cd;
+        border-bottom: 1px solid #f7d1cd;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    .purchaseArea .submit .buy {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+}

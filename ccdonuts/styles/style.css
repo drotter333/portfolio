@@ -1,0 +1,826 @@
+@charset "UTF-8";
+@import url("login.css");
+@import url("customer.css");
+@import url("card.css");
+@import url("purchase.css");
+
+body {
+    font-size: 24px;
+    line-height: 38.4px;
+    font-family: "Noto Sans JP", "Zen Kaku Gothic New", sans-serif;
+}
+main img {
+    width: 100%;
+}
+.spOnly {
+    display: none;
+}
+
+.headerTop {
+    height: 118px;
+    background-color: #ede0d4;
+    display: flex;
+    position: relative;
+}
+.headerLogo {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 87px;
+    height: 78px;
+}
+.headerImages {
+    display: flex;
+    margin: 32px 95px 0 auto;
+    gap: 40px;
+    text-align: center;
+    position: relative;
+}
+.headerImages img {
+    width: 30px;
+    height: 30px;
+}
+.login::before, .cart::before, .logout::before {
+    position: absolute;
+    display: block;
+    color: #7f5539;
+    font-size: 12px;
+    font-weight: bold;
+}
+.login::before {
+    content: "ログイン";   
+    top: 40%;
+    left: -9%;
+}
+.cart::before {
+    content: "カート";
+    top: 40%;
+    right: -5%;
+}
+.logout::before {
+    content: "ログアウト";   
+    top: 40%;
+    left: -13%;
+}
+.headerBot {
+    height: 64px;
+    background-color: #b392ac;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.headerBot .inputText {
+    background-color: white;
+    outline: 1px solid #7f5539;
+    margin-right: 95px;
+    width: 320px;
+    height: 40px;
+    padding-left: 4px;
+    font-size: 16px;
+}
+.headerBot .search {
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    background-color: #d9d9d9;
+    outline: 1px solid #7f5539;
+}
+.headerText, .breadcrumb {
+    color: #7f5539;
+    font-size: 12px;
+    height: 36px;
+    padding-left: 103px;
+    border-bottom: 1px solid #7f5539;;
+}
+
+.topSec {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px;
+    position: relative;
+}
+.topImages {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.product {
+    margin-top: 80px;
+}
+
+.topText {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.botText {
+    margin-bottom: 40px;
+}
+.topCatch, .botCatch {
+    margin-bottom: 20px;
+}
+
+.botSec {
+    width: 89%;
+    margin: 0 auto;
+    padding: 80px 60px 120px;
+}
+.catalogSec {
+    padding: 0 143px;
+}
+.botTitle, .catalogTitle {
+    text-align: center;
+}
+.catalogTitle {
+    margin: 80px 0 160px;
+}
+.subTitle {
+    color: #7f5539;
+    text-align: center;
+    margin-top: 80px;
+}
+.botSec h1, .catalogTitle h1 {
+    display: inline-block;
+    font-size: 32px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffd233;
+}
+
+.mainMenu {
+    margin-top: 80px;
+    padding-bottom: 120px;
+}
+.ranking, .mainMenu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 320px);
+    row-gap: 120px;      /* 行間 */
+    column-gap: 60px;   /* 列間 */
+    margin-top: 120px;
+}
+.botSec li span, .mainMenu li span {
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.ranking span {background-color: #e8c2ca;}
+li .first {background-color: #ffd233;}
+li .second {background-color: #ccc;}
+li .third {background-color: #d27c2c;}
+
+.botSec li img, .mainMenu li img {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 20px;
+}
+.text {
+    color: #7f5539;
+    margin-bottom: 20px;
+    width: 320px;
+}
+.mainMenu li .text {
+    height: 78px;
+}
+.price {
+    color: #bf0000;
+    margin-bottom: 20px;
+}
+.cartBtn {
+    text-align: center;
+}
+button, .detail .submit {
+    font-size: 20px;
+    width: 260px;
+    height: 52px;
+    color: white;
+    background-color: #7f5539;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #ede0d4;
+    position: relative;
+    height: 448px;
+}
+.footerNav {
+    display: flex;
+    gap: 62px;
+    padding: 20px 102px;
+}
+.footerNav li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #7f5539;
+    padding-left: 12px;
+    border-left: 2px solid #B392AC;
+    height: 40px;
+}
+.footerLogo {
+    width: 144px;
+    height: 128px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 264px 0 40px 0;
+}
+.icons img {
+    width: 32px;
+    height: 32px;
+}
+.copyright {
+    background-color: #ede0d4;
+    border-top: 1px solid #7f5539;
+    padding: 20px 0;
+}
+.copyright p {
+    color: #7f5539;
+    font-size: 12px;
+    text-align: center;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+.detailImage {
+    width: 540px;
+    height: 540px;
+    margin-right: 40px;
+}
+.detail h2, .cartArea h2 {
+    color: #7f5539;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #e6ccb2;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    width: 460px;
+}
+.detail .text {
+    width: 420px;
+    text-align: justify;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e6ccb2;
+}
+.detail .price {
+    margin-bottom: 40px;
+}
+.selectArea {
+    display: flex;
+    margin-bottom: 140px;
+}
+.selectArea span {
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.selectArea img {
+    width: 30px;
+    height: 30px;
+}
+.selectArea .heart {
+    padding-top: 4px;
+    width: 52px;
+    height: 52px;
+    outline: 1px solid #7f5539;
+    text-align: center;
+}
+.detail select, .cartItem select {
+    text-align: right;
+    padding-right: 14px;
+    width: 80px;
+    height: 52px;
+    outline: 1px solid #7f5539;
+    margin-right: 8px;
+}
+.detail .submit {
+    margin: 0;
+    margin-right: 8px;
+    padding-top: 4px;
+}
+
+.cartArea {
+    padding: 0 163px;
+    line-height: 20px;
+}
+.check {
+    text-align: center;
+    outline: 1px solid #ffd233;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+.check p {
+    color: #7f5539;
+    margin-bottom: 20px;
+}
+.check button {
+    background-color: #bf0000;
+    margin-top: 20px;
+}
+.cartContainer {
+    display: flex;
+    margin-top: 80px;
+}
+.cartWrapp {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6ccb2;
+}
+.cartImage {
+    width: 335px;
+    height: 335px;
+    margin-right: 40px;
+}
+.cartArea h2 {
+    width: 665px;
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+}
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+}
+.cartItem span {
+    padding-top: 8px;
+    margin-right: 12px;
+}
+.cartContainer button {
+    display: block;
+    height: 36px;
+    margin: 0;
+    margin-top: 24px;
+    margin-left: auto;
+    color: #000;
+    background-color: #ccc;
+}
+.cartContainer a {
+    display: block;
+    width: 80px;
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px solid #000;
+    margin-top: 100px;
+    margin-left: auto;
+}
+.cartArea .cartBtn {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+/* メニューを画面上部に固定表示しています */
+.gMenu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+/* メニューアイコンを画面左上に固定しています */
+.gMenu .menuIcon {
+    cursor: pointer;
+    position: absolute;
+    left: 95px;
+    top: 50px;
+    height: 50px;
+}
+/* メニューアイコン（三本線）の真ん中の線です */
+.gMenu .menuIcon .navicon {
+    background: #7f5539; /* 色は自由に変更可能です */
+    display: block;
+    height: 3px; /* 太さ */
+    width: 50px; /* 長さ */
+    position: relative;
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menuIcon .navicon::before,
+.gMenu .menuIcon .navicon::after {
+    background: #7f5539; /* 色は自由に変更可能です */
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.gMenu .menuIcon .navicon::before {top: 20px;} /* 位置を上にずらしています */
+.gMenu .menuIcon .navicon::after {top: -20px;} /* 位置を下にずらしています */
+/* 表示されるメニューです */
+.gMenu .menuSp {
+    background-color: rgba(127, 85, 57, .75);
+    overflow: hidden;
+    max-height: 0; /* ★最初は高さを0にして非表示状態に */
+    transition: max-height .6s; /* 表示されるときのアニメーション */
+    text-align: center;
+}
+/* メニュー部分のデザインです */
+.gMenu .menuSp li:last-of-type {
+    padding-bottom: 300px;
+}
+.gMenu .menuSp li img {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.gMenu .menuSp li a {
+    font-size: 24px;
+    text-shadow:
+    -1px -1px 0 #7f5539,
+     1px -1px 0 #7f5539,
+    -1px  1px 0 #7f5539,
+     1px  1px 0 #7f5539;
+    color: white;
+    display: block;
+    margin: 0px auto 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 560px;
+    border-bottom: 1px solid #fff;
+}
+/* チェックボックスは常に非表示です */
+.gMenu .menuBtn {
+    display: none;
+}
+/* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+.gMenu .menuBtn:checked ~ .menuSp {
+    max-height: 518px; /* ★チェックボックスがオンの時高さを518pxにして表示させます */
+    transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menuBtn:checked ~ .menuIcon .navicon {background: transparent;}
+
+/* メニューボタンの上下の線を45度傾けて✕印を作ります */
+.gMenu .menuBtn:checked ~ .menuIcon .navicon::before {transform: rotate(-45deg);top: 0;}
+.gMenu .menuBtn:checked ~ .menuIcon .navicon::after {transform: rotate(45deg);top: 0;}
+/* メニュー開いている時、✕ボタンを右上に表示 */
+.gMenu .menuBtn:checked ~ .menuIcon {
+    position: absolute;   /* 画面基準 */
+    top: 32px;
+    right: 95px;
+    left: auto;        /* ← 重要：leftを解除 */
+    z-index: 101;
+}
+/* メニュー開いている時、✕ボタンを白にする */
+.gMenu .menuBtn:checked ~ .menuIcon .navicon::before,
+.gMenu .menuBtn:checked ~ .menuIcon .navicon::after {
+    background: #fff;
+}
+.gMenu .menuBtn:checked ~ .menuIcon .navicon {
+    height: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        display: none;
+    }
+    .spOnly {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    body {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+    header {
+        background-color: #ede0d4;
+    }
+    .headerTop, .headerBot {
+        height: auto;
+    }
+    header img {
+        display: block;
+    }
+    .headerLogo {
+        position: absolute;
+        left: 45%;
+        top: 25%;
+        width: 62px;
+        height: 53px;
+    }
+    .headerImages {
+        display: flex;
+        margin: 24px 0 0 281px;
+        gap: 26px;
+    }
+    .headerImages img {
+        width: 25px;
+        height: 25px;
+    }
+    .login::before, .cart::before, .logout::before {
+        font-size: 10px;
+    }
+    .login::before {
+        content: "ログイン";   
+        top: 80%;
+        left: -9%;
+    }
+    .cart::before {
+        content: "カート";
+        top: 80%;
+        right: -6%;
+    }
+    .logout::before {
+        content: "ログアウト";   
+        top: 80%;
+        left: -12%;
+    }
+
+    .headerBot {
+        padding: 16px 0 8px;
+        display: flex;
+        justify-content: center;
+        background-color: #ede0d4;
+    }
+    .headerBot form {
+        margin-top: 16px;
+    }
+    .headerBot .inputText {
+        width: 318px;
+        height: 37px;
+        margin-right: 0px;
+    }
+    .headerBot .search {
+        width: 34px;
+        height: 37px;
+        padding: 6px;
+    }
+    .headerText, .breadcrumb {
+        padding-left: 12px;
+        padding-top: 4px;
+    }
+
+    .product {
+        margin-top: 0;
+    }
+
+    .topText {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .botText {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    .topCatch, .botCatch {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .topSec, .botSec, .catalogSec, .mainMenu, .subTitle, .catalogTitle {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .catalogSec {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .topImages {
+        gap: 20px;
+    }
+    .botSec h1, .catalogSec h1 {
+        font-size: 20px;
+        margin-top: 0;
+        padding-bottom: 12px;
+    }
+    .catalogSec h1 {
+        margin-top: 32px;
+        margin-bottom: 52px;
+    }
+    .ranking, .mainMenu {
+        grid-template-columns: repeat(2, 157px);
+        row-gap: 80px;      /* 行間 */
+        column-gap: 20px;   /* 列間 */
+        margin: 80px 0 80px;
+    }
+    .botSec li span {
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        color: white;
+    }
+    .botSec li img, .mainMenu li img {
+        width: 157px;
+        height: 157px;
+    }
+    .botSec .text, .mainMenu .text {
+        width: 100%;
+    }
+    .mainMenu li .text {
+        height: auto;
+    }
+    .botSec button, .mainMenu button {
+        font-size: 12px;
+        width: 148px;
+        height: 36px;
+    }
+
+    footer {
+        height: 303px;
+    }
+    footer img {
+        display: block;
+    }
+    .footerNav {
+        display: block;
+        padding: 12px;
+    }
+    .footerNav li {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        height: 20px;
+        margin-bottom: 20px;
+    }
+    .footerLogo {
+        width: 72px;
+        height: 64px;
+        top: 75%;
+        left: 85%;
+    }
+    .icons {
+        display: flex;
+        justify-content: left;
+        gap: 20px;
+        margin: 0 12px 92px;
+    }
+    .icons img {
+        width: 32px;
+        height: 32px;
+    }
+    .copyright {
+        padding: 12px 0;
+    }
+    .copyright p {
+        color: #7f5539;
+        font-size: 10px;
+        text-align: center;
+    }
+    .detail {
+        display: block;
+        padding: 20px;
+    }
+    .detail img {
+        display: block;
+    }
+    .detailImage {
+        width: 335px;
+        height: 335px;
+        margin-bottom: 20px;
+    }
+    .detail h2 {
+        width: 290px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .detail .text {
+        width: 335px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .detail select {
+        width: 56px;
+        height: 36px;
+    }
+    .detail .submit {
+        width: 160px;
+        height: 36px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    .selectArea {
+        margin-bottom: 80px;
+    }
+    .selectArea span {
+        margin-right: 12px;
+        padding-top: 16px;
+    }
+    .selectArea .heart {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+    .selectArea img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cartContainer, .cartItem {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .cartWrapp {
+        border: none;
+        padding: 0;
+    }
+    .cartArea {
+        padding: 0 20px;
+    }
+    .cartArea h2 {
+        width: 100%;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        border: none;
+    }
+    .cartImage {
+        display: block;
+    }
+    .cartItem .price {
+        margin-bottom: 16px;
+    }
+    .cartItem select {
+        width: 56px;
+        height: 24px;
+        margin-right: 4px;
+    }
+    .cartItem span {
+        margin-right: 16px;
+        padding-top: 0;
+        vertical-align: middle;
+    }
+    .cartContainer button {
+        margin: 20px auto;
+        width: 140px;
+        height: 28px;
+        font-size: 12px;
+    }
+    .cartContainer a {
+        margin: 0 auto 20px;
+        font-size: 12px;
+        width: 48px;
+    }
+    .check {
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+    .check button {
+        margin: 0;
+    }
+
+    .cartArea .cartBtm {
+        margin: 40px 0 80px;
+    }
+    .cartArea .cartBtn button, .check button {
+        font-size: 12px;
+        width: 160px;
+        height: 36px;
+    }
+
+    .gMenu .menuIcon {
+        left: 12px;
+        top: 34px;
+        height: 25px;
+    }
+    .gMenu .menuBtn:checked ~ .menuSp {
+        padding-bottom: 124px;
+    }
+    .gMenu .menuIcon .navicon {
+        height: 3px; /* 太さ */
+        width: 25px; /* 長さ */
+    }
+    .gMenu .menuIcon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+    .gMenu .menuIcon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+    .gMenu .menuSp {
+        text-align: left;
+    }
+    .gMenu .menuSp li:last-of-type {
+        padding-bottom: 0;
+    }
+    .gMenu .menuSp li {
+        border-bottom: 1px solid #fff;
+        margin-bottom: 16px;
+    }
+    .gMenu .menuSp li img {
+        width: 59px;
+        height: 52px;
+        padding: 0;
+        margin: 12px 12px 60px;
+    }
+    .gMenu .menuSp .menuLogo {
+        border-bottom: none;
+    }
+    .gMenu .menuSp li a {
+        font-size: 16px;
+        margin: 0;
+        margin-left:12px;
+        width: 100%;
+        border-bottom: none;
+    }
+    .gMenu .menuBtn:checked ~ .menuIcon {
+        top: 22px;
+        right: 12px;
+    }
+}

@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+
+    .cardArea form{
+        margin-top: 32px;
+        padding: 0 40px;
+    }
+    .cardArea p {
+        color: #7f5539;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 8px;
+    }
+    .cardArea .label {
+        color: #ff0000;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 16px;
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 4px;
+    }
+    .cardArea form input {
+        outline: 1px solid #7f5539;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cardArea form .submit{
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .cardArea form .submit input {
+        background-color: #7f5539;
+        margin-bottom: 80px;
+        width: 160px;
+        height: 48px;
+    }
+    .cardArea a {
+        display: block;
+        width: 96px;
+        color: #7f5539;
+        font-size: 12px;
+        margin: 20px 0 80px;
+        margin-left: auto;
+    }
+    .radioBtn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .cardArea .radioBtn input {
+        outline: none;
+        margin: 0;
+    }
+    .radioBtn input[type="radio"] {
+        display: none;
+    }
+    .radioBtn label {
+        color: #7f5539;
+        font-size: 12px;
+        position: relative;
+        margin-right: 30px;
+        padding-left: 24px;
+        display: inline-block;
+    }
+    .radioBtn label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        border: 1px solid #7f5539;
+        border-radius: 50%;
+    }
+    .radioBtn label::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(0);
+        width: 12px;
+        height: 12px;
+        background: #000;
+        border-radius: 50%;
+    }
+    .radioBtn input:checked + label::after {
+        transform: translateY(-50%) scale(1);
+    }
+    .cardArea .date {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cardArea .date input {
+        display: block;
+        margin-bottom: 8px;
+        margin-right: 12px;
+        width: 60px;
+    }
+    .dateTop, .dateBot {
+        display: flex;
+        color: #7f5539;
+        font-size: 12px;
+    }
+    .outputArea .dateTop p {
+        margin-bottom: 8px;
+    }
+    .outputArea .dateTop p, .outputArea .dateBot p {
+        margin-right: 12px;
+        padding-top: 4px;
+    }
+}

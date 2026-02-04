@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px) {
+    .customerArea form, .outputArea {
+        margin-top: 32px;
+        padding: 0 40px;
+    }
+    .customerArea p, .outputArea p {
+        color: #7f5539;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 8px;
+    }
+    .customerArea form input {
+        outline: 1px solid #7f5539;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .customerArea form .submit, .outputArea .submit {
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .outputArea .submit {
+        margin-top: 40px;
+    }
+    .customerArea form .submit input, .outputArea .submit input {
+        background-color: #7f5539;
+        margin-bottom: 80px;
+        width: 160px;
+        height: 48px;
+    }
+    .customerArea a {
+        display: block;
+        width: 96px;
+        color: #7f5539;
+        font-size: 12px;
+        margin: 20px 0 80px;
+        margin-left: auto;
+    }
+    .postCode {
+        display: flex;
+    }
+    .customerArea form .postCodeL {
+        width: 60px;
+        margin-right: 4px;
+    }
+    .customerArea form .postCodeR {
+        width: 100px;
+    }
+    .required {
+        color: #ff0000;
+    }
+    .customerArea form .label {
+        color: #ff0000;
+        font-size: 8px;
+    }
+    .outputArea .information {
+        color: #000;
+        border-left: 1px solid #7f5539;
+        padding-left: 4px;
+        padding-top: 2px;
+        margin-bottom: 20px;
+        height: 20px;
+    }
+    .outputWrapp {
+        margin-top: 40px;
+    }
+}
