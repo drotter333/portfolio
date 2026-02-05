@@ -8,8 +8,7 @@ if (!isset($_SESSION['products'])) {
 if (isset($_REQUEST['id'], $_REQUEST['name'], $_REQUEST['price'], $_REQUEST['count'])) {
     $id = $_REQUEST['id'];
     $_SESSION['products'][$id]=[
-    'name'=>$_REQUEST['name'], 'price'=>$_REQUEST['price'], 'count'=>$_REQUEST['count']
-    ];
+    'name'=>$_REQUEST['name'], 'price'=>$_REQUEST['price'], 'count'=>$_REQUEST['count']];
 }
 $totalCount = 0;
 $totalPrice = 0;
