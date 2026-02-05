@@ -1,8 +1,8 @@
 <?php $purchaseTitle = '購入確認'; ?>
 <?php require 'includes/header.php'; ?>
 <main class="purchaseArea">
-    <div class="mainTitle"><h1>ご購入確認</h1></div>
-    <div class="purchaseTitle"><p>ご購入商品</p><div>
+<div class="mainTitle"><h1>ご購入確認</h1></div>
+<div class="purchaseTitle"><p>ご購入商品</p><div>
 <?php
 $totalCount = 0;
 $totalPrice = 0;
@@ -37,20 +37,29 @@ echo '</dl>';
 
 echo '<div class="purchaseTitle"><p>お届け先</p></div>';
 
-echo '<dl>';
-echo '<div class="purchaseRow">';
-echo '<dt>お名前</dt>';
-echo '<dd>', $_SESSION['customers']['name'], '</dd>';
-echo '</div>';
-echo '<div class="purchaseRow">';
-echo '<dt>郵便番号</dt>';
-echo '<dd>', $_SESSION['customers']['postcode_a'], '', $_SESSION['customers']['postcode_b'], '</dd>';
-echo '</div>';
-echo '<div class="purchaseRow">';
-echo '<dt>住所</dt>';
-echo '<dd>', $_SESSION['customers']['address'], '</dd>';
-echo '</div>';
-echo '</dl>';
+if (isset($_SESSION['customers'])) {
+    echo '<dl>';
+    echo '<div class="purchaseRow">';
+    echo '<dt>お名前</dt>';
+    echo '<dd>', $_SESSION['customers']['name'], '</dd>';
+    echo '</div>';
+    echo '<div class="purchaseRow">';
+    echo '<dt>郵便番号</dt>';
+    echo '<dd>', $_SESSION['customers']['postcode_a'], '', $_SESSION['customers']['postcode_b'], '</dd>';
+    echo '</div>';
+    echo '<div class="purchaseRow">';
+    echo '<dt>住所</dt>';
+    echo '<dd>', $_SESSION['customers']['address'], '</dd>';
+    echo '</div>';
+    echo '</dl>';
+} else {
+   echo '<dl>';
+   echo '<div class="purchaseRow">';
+   echo '<dt></dt>';
+   echo '<dd>お客様情報はありません</dd>';
+   echo '</div>';
+   echo '</dl>';
+}
 ?>
     <div class="purchaseTitle"><p>支払い方法</p><div>
     <div class="enter">
