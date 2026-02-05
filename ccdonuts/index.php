@@ -35,13 +35,12 @@
     // 2つのテーブルをidを使って結合：join products on purchase_detail.product_id = products.id
     // group byの意味：同じ値の行をひとまとめにする
     // 商品ごとにまとめる：group by purchase_detail.product_id, products.name, products.price
+    
     $sql = $pdo->query('select products.id as product_id, products.name, products.price,
-                        SUM(purchase_detail.count) as total_count
-                        from purchase_detail
+                        sum(purchase_detail.count) as total_count from purchase_detail
                         join products on purchase_detail.product_id = products.id
                         group by purchase_detail.product_id, products.name, products.price
                         order by total_count desc limit 6');
-
     $ranking = $sql->fetchAll();
     echo '<ol class="ranking">';
     $rank = 1;

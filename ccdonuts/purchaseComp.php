@@ -5,10 +5,7 @@
 <?php require_once('includes/connectDbData.php'); ?>
 <?php
 $pdo = new PDO(ACCESSDB, DBID, DBPW);
-$purchase_id=1;
-foreach ($pdo->query('select max(id) from purchase') as $row) {
-	$purchase_id=$row['max(id)']+1;
-}
+$purchase_id = $pdo->lastInsertId();
 $sql=$pdo->prepare('insert into purchase values(?,?)');
 if ($sql->execute([$purchase_id, $_SESSION['customers']['id']])) {
 	foreach ($_SESSION['products'] as $products_id=>$products) {
