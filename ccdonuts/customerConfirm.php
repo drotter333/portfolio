@@ -2,23 +2,17 @@
 <?php 
 $mail = $_REQUEST['mail'];
 if (!preg_match('/^[^@]+@[^@]+$/', $mail)) { // [^@]（@以外の任意の文字）
-    echo 'メールアドレスが適切ではありません。';
-    require 'includes/footer.php';
-    exit;
+    echo '<p class="label">メールアドレスが適切ではありません。</p>';
 }
 $mail = $_POST['mail'];
 $mail_confirm = $_POST['mail_confirm'];
 if ($mail !== $mail_confirm) {
-    echo 'メールアドレスが一致しません。';
-    require 'includes/footer.php';
-    exit;
+    echo '<p class="label">メールアドレスが一致しません。</p>';
 }
 $password = $_POST['password'];
 $password_confirm = $_POST['password_confirm'];
 if ($password !== $password_confirm) {
-    echo 'パスワードが一致しません。';
-    require 'includes/footer.php';
-    exit;
+    echo '<p class="label">パスワードが一致しません。</p>';
 }
 
 echo '<main class="outputArea">';
