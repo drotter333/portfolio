@@ -1,7 +1,5 @@
 <?php require 'includes/header.php'; ?>
 <?php
-$name=$furigana=$postcode_a=$postcode_b=$address=$mail=$password='';
-
 // if (isset($_SESSION['customers'])) {
 //     $name=$_SESSION['customers']['name'];
 //     $furigana=$_SESSION['customers']['furigana'];
@@ -11,9 +9,11 @@ $name=$furigana=$postcode_a=$postcode_b=$address=$mail=$password='';
 //     $mail=$_SESSION['customers']['mail'];
 //     $password=$_SESSION['customers']['password']; }
 
-echo '<main class="customerArea">'; // パスワードが平文で表示されている　xss対策は最低限
+echo '<main class="customerArea">';
 echo '<div class="mainTitle"><h1>会員登録</h1></div>';
-echo '<form action="customerConfirm.php" method="post">';
+
+$name=$furigana=$postcode_a=$postcode_b=$address=$mail=$password='';
+echo '<form action="customerConfirm.php" method="post">'; // パスワードが平文で表示されている　xss対策は最低限
 echo '<p>お名前<span class="required">（必須）</span></p>';
 echo '<input type="text" name="name" value="', htmlspecialchars($name), '">';
 echo '<p>お名前（フリガナ）<span class="required">（必須）</span></p>';
