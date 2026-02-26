@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>かわうそ(.js)</title>
+</head>
+<body>
+    <div class="select">
+        <p>かわうそ（一般）</p>
+        <img src="images/kawauso.png" id="chara">
+        <div id="status">
+            <p>ごく普通のかわうそ</p>
+            <ul>
+                <li>体力：100</li>
+                <li>攻撃：20</li>
+                <li>防御：10</li>
+            </ul>
+        </div>
+        <button id="selectBtn">えらぶ</button>
+    </div>
+    <p class="colors">そうびひん（
+        <span class="dimgray">★１</span> >
+        <span class="lightgreen">★２</span> >
+        <span class="plum">★３</span> ）
+    </p>
+
+    <div id="load1">
+        <h1 class="floor">◢「1F」</h1>
+        <p class="loadText">（まだ みちのりは ながそう…）</p>
+        <button type="button" class="next" data-target="stage1" id="start1">▶ たたかいを はじめる</button>
+    </div>
+
+    <img src="images/kawauso_back.png" id="kawauso">
+    <p id="arrow">▼</p>
+    <button id="take"><img id="item"></img></button>
+    <button id="take2"><img id="item2"></img></button>
+    <div id="text1">
+        <h1 id="sword"></h1>
+        <p id="swordText"></p>
+    </div>
+    <div id="text2">
+        <h1 id="armor"></h1>
+        <p id="armorText"></p>
+    </div>
+
+    <div id="defeat">
+        <button><a href="index.html">▶ はじめから やりなおす</a></button>
+    </div>
+    <div id="victory">
+        <button><a href="index.html">▶ すべての てきを たおした！</a></button>
+    </div>
+
+    <ul id="kawa_st">
+        <span>name：<li id="name"></li></span>
+        <span>hp：<li id="hp"></li></span>
+        <span>atk：<li id="atk"></li></span>
+        <span>def：<li id="def"></li></span>
+        <span>spd：<li id="spd"></li></span>
+    </ul>
+    
+    <div id="stage1">
+    <p>スライム（青）</p>
+    <div class="hpContainer">
+        <div id="enemy_hp"></div>
+    </div>
+        <img src="images/slime.png" id="slime">
+        <div id="log1"></div>
+        <div id="enemyLog1"></div>
+    </div>
+    <div id="next1">
+        <button id="nextBtn1">▶ つぎへ すすむ</button>
+    </div>
+
+    <div id="load2">
+        <h1 class="floor">◢「2F」</h1>
+        <p class="loadText">（おりかえしまで きたみたい…）</p>
+        <button type="button" class="next" data-target="stage2" id="start2">▶ たたかいを はじめる</button>
+    </div>
+
+    <div id="stage2">
+        <p>スライム（緑）</p>
+        <div class="hpContainer">
+            <div id="enemy_hp2"></div>
+        </div>
+        <img src="images/slime2.png" id="slime2">
+        <div id="log2"></div>
+        <div id="enemyLog2"></div>
+    </div>
+    <div id="next2">
+        <button id="nextBtn2">▶ つぎへ すすむ</button>
+    </div>
+
+    <div id="load3">
+        <h1 class="floor">◢「3F」</h1>
+        <p class="loadText">（ここが さいじょうかい みたい！）</p>
+        <button type="button" class="next" data-target="stage3" id="start3">▶ たたかいを はじめる</button>
+    </div>
+    
+    <div id="stage3">
+        <p>あらいぐま（ボス）</p>
+        <div class="hpContainer">
+            <div id="enemy_hp3"></div>
+        </div>
+        <img src="images/araiguma.png" id="araiguma">
+        <div id="log3"></div>
+        <div id="enemyLog3"></div>
+    </div>
+<script src="scripts/script.js"></script>
+</body>
+</html>

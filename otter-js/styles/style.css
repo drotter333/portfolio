@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+body {
+    font-family: "DotGothic16", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+#load1.pop, #stage1.pop, #text1.pop, #next1.pop,
+#load2.pop, #stage2.pop, #text2.pop, #next2.pop,
+#load3.pop, #stage3.pop, #status.pop, #kawauso.pop,
+#kawa_st.pop, #defeat.pop, #victory.pop {
+    display: block;
+}
+.select, #load1, #stage1, #next1,
+#load2, #stage2, #next2,
+#load3, #stage3, #defeat, #victory {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 400px;
+    outline: 2px solid black;
+    background-color: lightyellow;
+    border-radius: 8px;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+#selectBtn {
+    display: block;
+    margin: 0 auto;
+    outline: 2px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 12px;
+}
+#status {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 55%;
+    font-size: 16px;
+    outline: 2px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 12px;
+}
+#kawa_st {
+    display: none;
+    position: fixed;
+    top: 53%;
+    left: 47%;
+    font-size: 12px;
+    outline: 2px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 12px;
+    z-index: 10;
+}
+#kawa_st span {
+    display: flex;
+}
+#status p {
+    margin-bottom: 4px;
+}
+.floor {
+    font-size: 40px;
+    letter-spacing: .3em;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+.loadText {
+    margin-bottom: 40px;
+}
+.next {
+    font-size: 16px;
+}
+
+#load1 {
+    display: none;
+    z-index: 1;
+}
+#stage1 {
+    display: none;
+    z-index: 2;
+}
+#stage2 {
+    display: none;
+    z-index: 3;
+}
+#stage3 {
+    display: none;
+    z-index: 4;
+}
+#load2, #load3 {
+    display: none;
+    z-index: 50;
+}
+#next1, #next2, #defeat, #victory {
+    display: none;
+    z-index: 100;
+    opacity: 0.5;
+    outline: none;
+    background-color: black;
+}
+#next1 button, #next2 button, #defeat button, #victory button {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 60px;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+.jump {
+    animation: jump .3s linear forwards;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.win {
+    animation: win .3s linear 3;
+}
+@keyframes win {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.damageLog {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    font-size: 28px;
+    animation: float 3s ease-out forwards;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+}
+#enemyLog1 .damageLog, #enemyLog2 .damageLog, #enemyLog3 .damageLog {
+    position: absolute;
+    top: 55%;
+    left: 18%;
+}
+#kawauso.down, #slime.down, #slime2.down, #araiguma.down {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#kawauso {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    opacity: 1;
+    z-index: 10;
+}
+#slime, #slime2 {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    opacity: 1;
+}
+#araiguma {
+    position: absolute;
+    top: 5%;
+    left: 58%;
+    opacity: 1;
+}
+#item, #item2 {
+    display: none;
+    position: absolute;
+    top: 24.5%;
+    left: 59.5%;
+    background-color: white;
+    outline: 4px dimgray solid;
+    border-radius: 8px;
+    z-index: 10;
+}
+#arrow {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 61.5%;
+    color: dimgray;
+    z-index: 10;
+    animation: fuwafuwa 1s ease-in-out infinite;
+}
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#text1, #text2 {
+    font-size: 12px;
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 64.5%;
+    background-color: white;
+    outline: 2px solid black;
+    border-radius: 2px;
+    padding: 8px;
+    z-index: 11;
+}
+#text1 h1, #text2 h1 {
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid black;
+}
+
+#stage1 p, #stage2 p, #stage3 p {
+    position: absolute;
+    top: 1%;
+    left: 79%;
+}
+#stage3 p {
+    left: 74%;
+}
+
+.hpContainer {
+    position: absolute;
+    top: 9%;
+    left: 76%;
+    width: 150px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid black;
+}
+#enemy_hp, #enemy_hp2, #enemy_hp3 {
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    transition: width 1s ease;
+}
+
+.colors {
+    position: absolute;
+    top: 78%;
+    left: 60%;
+    font-size: 12px;
+}
+.dimgray {color: dimgray;}
+.lightgreen {color: darkgreen;}
+.plum {color: purple;}
