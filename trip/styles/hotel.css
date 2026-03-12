@@ -1,0 +1,158 @@
+@import url('include.css');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Shippori Mincho", serif;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    line-height: 1.7em;
+}
+body h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    position: relative;
+    margin-bottom: 100px;
+}
+.headerNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: lightgray;
+    margin: 30px 38px;
+}
+.headerNav h1, .headerNav button {
+    position: fixed;
+    top: 5%;
+}
+.headerNav h1 {
+    z-index: 101;
+}
+.headerNav button {
+    z-index: 10;
+    left: 94%;
+}
+header ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+.header_text {
+    position: absolute;
+    text-align: right;
+    top: 85%;
+    left: 82%;
+    color: #505050;
+}
+.header_text h2 {
+    font-size: 72px;
+}
+.header_text h3 {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.top_sec {
+    position: relative;
+    text-align: right;
+    margin-bottom: 170px;
+}
+.top_text, .mid_text {
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 33%;
+    padding-left: 20px;
+    border-left: 1px solid #000;
+    text-align: left;
+}
+.top_text h2, .mid_text h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.top_text p, .mid_text p {
+    font-size: 14px;
+}
+
+.mid_sec {
+    position: relative;
+    height: 1720px;
+}
+.mid_text {
+    top: 590px;
+    left: 60%;
+}
+.bath_img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.room_img {
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 0%;
+}
+.view_img {
+    position: absolute;
+    top: 900px;
+    right: 0;
+}
+.mid_sec h3 {
+    writing-mode: vertical-rl;
+    font-size: 90px;
+    color: #e0e0e0;
+}
+.Bath {
+    position: absolute;
+    top: -170px;
+    right: 14%;
+}
+.Room {
+    position: absolute;
+    top: 120px;
+    left: 51%;
+}
+.View {
+    position: absolute;
+    top: 1250px;
+    left: 6.5%;
+}
+
+.pick_sec {
+    margin-bottom: 200px;
+}
+.pick1, .pick2, .pick3 {
+    display: flex;
+    justify-content: center;
+    gap: 78px;
+    padding: 50px 153px;
+}
+.pick1 {background-color: #f4f4f4;}
+.pick2 {background-color: #ececec;}
+.pick3 {background-color: #e7e7e7;}
+.pick1_wrapp, .pick2_wrapp, .pick3_wrapp {
+    font-family: "Noto Sans JP", serif;
+    font-weight: 300;
+    width: 557px;
+}
+.pick1_wrapp h2, .pick2_wrapp h2, .pick3_wrapp h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.pick1_text, .pick2_text, .pick3_text {
+    margin-bottom: 40px;
+    padding-bottom: 17px;
+    border-bottom: 1px dashed #000;
+}

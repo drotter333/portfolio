@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/top.css">
+    <title>TRIP JAPAN | TOP</title>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="content">
+            <img src="images/loading_img.png" id="load_img">
+        </div>
+        <p class="loadText">Loading…</p>
+    </div>
+
+    <header>
+        <div class="headerNav">
+            <h1>trip japan</h1>
+            <button id="open"><img src="images/menu.png"></button>
+        </div>
+        <div class="heroimages">
+            <img src="images/mv1_left.png" id="mv_left" class="pc_only">
+            <img src="images/mv1_right.png" id="mv_right" class="pc_only">
+            <img src="images/sp_mv1_left.png" class="sp_only">
+            <img src="images/sp_mv1_right.png" class="sp_only">
+        </div>
+        <p class="textRight">五感で感じる</p>
+        <p class="textLeft">沖縄の味わい</p>
+        <p id="heroText">広がる青の世界</p>
+    </header>
+    
+    <div id="navi">
+        <div class="nav_top">
+            <h1>trip japan</h1>
+            <button id="close"><img src="images/close.png"></button>
+        </div>
+        <ul>
+            <li><a href="top.html" class="top_li">トップ</a></li>
+            <li><a href="activities.html" class="act_li">アクティビティ</a></li>
+            <li><a href="food.html">沖縄郷土料理</a></li>
+            <li><a href="hotel.html">宿泊施設</a></li>
+        </ul>
+        <div class="nav_icons">
+            <img src="images/instagram_nav.png">
+            <img src="images/twitter_nav.png">
+        </div>
+    </div>
+
+    <section class="news">
+        <div class="whatsNew">
+            <h1>what's new</h1>
+            <ul>
+                <li><span>2023.07.25</span><a href="#">サイトリニューアルいたしました。</a></li>
+                <li><span>2022.07.01</span><a href="#">沖縄特集ポータルサイトを開設しました。</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="overview">
+        <img src="images/overview.png" class="pc_only">
+        <img src="images/sp_overview.png" class="sp_only">
+        <div class="overviewText">
+            <h1>01 overview</h1>
+            <h2>きっと見つかる、わたしの居場所</h2>
+            <p>
+                ゆったりとした自然が広がる場所、沖縄。
+                海をはじめとする景色やアクティビティ、ユニークな食べ物、
+                そして穏やかな人々が非日常を演出します。沖縄だからこそ味わえる、
+                記憶に残るリゾート気分を満喫できます。
+            </p>
+        </div>
+    </section>
+
+    <section class="activities">
+        <img src="images/hanabi.png" class="hanabi pc_only">
+        <p class="play">遊ぶ</p>
+        <div class="actimages">
+            <img src="images/acrivities1.png" id="act1" class="hide pc_only">
+            <img src="images/activities2.png" id="act2" class="hide pc_only">
+            <img src="images/activities3.png" id="act3" class="hide pc_only">
+            <img src="images/sp_act1.png" id="act1" class="sp_only">
+            <img src="images/sp_act2.png" id="act2" class="sp_only">
+            <img src="images/sp_act3.png" id="act3" class="sp_only">
+        </div>
+        <div class="activitiesText">
+            <h1>02 activities</h1>
+            <h2>幻想的な空と海の青き世界</h2>
+            <p>
+                ダイビング、シュノーケリング、バナナボートをはじめとするマリンアクティビティや、
+                パラセーリングで空中散歩など、青の世界に包まれながら日常では味わえない遊びが堪能できます。
+            </p>
+            <a href="activities.html"><span class="more">詳しく見る</span></a>
+        </div>
+    </section>
+
+    <section class="foods">
+        <p class="eat">食べる</p>
+        <img src="images/hibiscus.png" class="hibiscus pc_only">
+        <img src="images/sp_hybiscas.png" class="hibiscus sp_only">
+        <img src="images/foods1.png" class="soba pc_only" id="thumbnail">
+        <img src="images/sp_foods1.png" class="soba sp_only" id="thumbnail">
+        <div class="foodsimages">
+            <img src="images/foods1_img.png" class="pc_only">
+            <img src="images/foods2_img.png" class="pc_only">
+            <img src="images/foods3_img.png" class="pc_only">
+            <img src="images/foods4_img.png" class="pc_only">
+            <img src="images/sp_foods1_img.png" class="sp_only">
+            <img src="images/sp_foods2_img.png" class="sp_only">
+            <img src="images/sp_foods3_img.png" class="sp_only">
+            <img src="images/sp_foods4_img.png" class="sp_only">
+        </div>
+        <div class="foodsText">
+            <h1>03 foods</h1>
+            <h2>ユニークな絶品料理に舌鼓</h2>
+            <p>
+                ソーキそば、アグー豚、泡盛など、沖縄にはユニークでおいしい郷土料理がたくさんあります。
+                昼はおしゃれなカフェでランチ、夜はお酒を飲みながら郷土料理ディナー。目から舌から美味しい時間を堪能できます。
+            </p>
+            <a href="food.html"><span class="more">詳しく見る</span></a>
+        </div>
+    </section>
+
+    <section class="hotels">
+        <div id="hotels_slider" class="pc_only">
+            <img src="images/hotels1.png" class="pc_only">
+            <img src="images/hotels2.png" class="pc_only">
+            <img src="images/hotels3.png" class="pc_only">
+            <img src="images/hotels1.png" class="pc_only">
+            <img src="images/hotels2.png" class="pc_only">
+            <img src="images/hotels3.png" class="pc_only">
+        </div>
+        <div id="sp_hotels_slider" class="sp_only">
+            <img src="images/sp_hotels1.png" class="sp_only">
+            <img src="images/sp_hotels2.png" class="sp_only">
+            <img src="images/sp_hotels3.png" class="sp_only">
+            <img src="images/sp_hotels1.png" class="sp_only">
+            <img src="images/sp_hotels2.png" class="sp_only">
+            <img src="images/sp_hotels3.png" class="sp_only">
+        </div>
+            <div class="hotelsText">
+                <h1>04 hotels</h1>
+                <h2>ゆったりとくつろげる厳選の宿</h2>
+                <p>
+                    沖縄には異国のようなリゾートホテルが豊富にご用意されています。
+                    その非日常的な空間は、楽しい観光やアクティビティの疲れを癒してくれます。
+                    ホテルでゆっくりリゾート気分を味わうのもおすすめです。
+                </p>
+                <a href="hotel.html"><span class="more">詳しく見る</span></a>
+            </div>
+    </section>
+    <div class="hotelscontainer">
+    <div class="hotelsWapper"></div>
+    <p class="stay">泊まる</p>
+    </div>
+
+    <div class="phots">
+    <p class="photosText">五感で楽しめる場所が<br>ここにある。</p>
+        <div id="photos_slider" class="pc_only">
+            <img src="images/photos1.png" class="pc_only">
+            <img src="images/photos2.png" class="pc_only">
+            <img src="images/photos3.png" class="pc_only">
+            <img src="images/photos1.png" class="pc_only">
+            <img src="images/photos2.png" class="pc_only">
+            <img src="images/photos3.png" class="pc_only">
+        </div>
+        <div id="sp_photos_slider" class="sp_only">
+            <img src="images/sp_photos1.png" class="sp_only">
+            <img src="images/sp_photos2.png" class="sp_only">
+            <img src="images/sp_photos3.png" class="sp_only">
+            <img src="images/sp_photos1.png" class="sp_only">
+            <img src="images/sp_photos2.png" class="sp_only">
+            <img src="images/sp_photos3.png" class="sp_only">
+        </div>
+    </div>
+
+    <section class="form">
+        <div class="formText">
+            <h1>get in touch</h1>
+            <h2 class="pc_only">TRIP JAPANは、”ここにしかない”日本観光を応援します。</h2>
+            <h2 class="sp_only">TRIP JAPANは、<br>”ここにしかない”日本観光を<br>応援します。</h2>
+            <p>
+                トリップジャパンは、ユニークな日本の魅力を発信していきます。
+                お問い合わせは法人企業および自治体のみ受け付けております。
+                掲載ご希望等については<span>お問い合わせフォーム</span>
+                よりお申し込み下さい。
+            </p>
+        </div>
+
+        <form action="send.php" method="post">
+            <h1>お問い合わせ</h1>
+            <div class="formWapper">
+                <p>貴社名<span>必須</span></p>
+                <input type="text" name="company">
+            </div>
+            <div class="formWapper">
+                <p>お名前<span>必須</span></p>
+                <input type="text" name="name">
+            </div>
+            <div class="formWapper">
+                <p>部署名</p>
+                <input type="text" name="department">
+            </div>
+            <div class="formWapper">
+                <p>電話番号<span>必須</span></p>
+                <input type="text" name="phone">
+            </div>
+            <div class="formWapper">
+                <p>メールアドレス<span>必須</span></p>
+                <input type="email" name="mail">
+            </div>
+            <div class="textWapper">
+                <p>お問い合わせ内容<span>必須</span></p>
+                <textarea name="message"></textarea>
+            </div>
+            <p class="agree"><span>弊社個人情報保護方針</span>に同意します</p>
+            <button type="submit">確認画面へ</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="top.html">top</a></li>
+            <li><a href="activities.html">activities</a></li>
+            <li><a href="food.html">foods</a></li>
+            <li><a href="hotel.html">hotels</a></li>
+        </ul>
+        <h1>trip japan</h1>
+        <div class="icons">
+            <img src="images/instagram.png">
+            <img src="images/twitter.png">
+        </div>
+        <p>trip japanおよび当サイトは架空です</p>
+        <a href="#" class="pagetop">▲</a>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

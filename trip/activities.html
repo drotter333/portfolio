@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/activities.css">
+    <title>TRIP JAPAN | Activities</title>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="content">
+            <img src="images/loading_img.png" id="load_img">
+        </div>
+        <p class="loadText">Loading…</p>
+    </div>
+    
+    <header>
+        <div class="headerNav">
+            <h1>trip japan</h1>
+            <button id="open"><img src="images/menu.png"></button>
+        </div>
+        <img src="images/act_hero.png">
+        <ul>
+            <li>Top</li> - 
+            <li>Activities</li>
+        </ul>
+        <div class="header_text">
+            <h2>Activities</h2>
+            <h3>アクティビティ</h3>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="nav_top">
+            <h1>trip japan</h1>
+            <button id="close"><img src="images/close.png"></button>
+        </div>
+        <ul>
+            <li><a href="top.html" class="top_li">トップ</a></li>
+            <li><a href="activities.html" class="act_li">アクティビティ</a></li>
+            <li><a href="food.html">沖縄郷土料理</a></li>
+            <li><a href="hotel.html">宿泊施設</a></li>
+        </ul>
+        <div class="nav_icons">
+            <img src="images/instagram_nav.png">
+            <img src="images/twitter_nav.png">
+        </div>
+    </div>
+    
+    <section class="top_sec">
+        <div class="top_text">
+            <h2>青く無垢な大自然を堪能する</h2>
+            <p>
+                沖縄の本島・離島には海をはじめとする自然を活かしたアクティビティが豊富にあります。
+                水上・水中・空中を使った遊びは日常では味わえない沖縄ならではなもの。
+                「ここにしかない」遊びをご紹介します。
+            </p>
+        </div>
+        <img src="images/act_top.png">
+    </section>
+
+    <section class="tab_sec">
+        <div class="tabs">
+            <button id="diving">diving</button>
+            <button id="kayak">sea kayak</button>
+            <button id="parasail">parasailing</button>
+        </div>
+        <img src="images/act_tag1.png" id="act_images">
+        <div class="tag_wapper">
+            <h2 id="tag_title">水中の世界</h2>
+            <p id="tag_text">
+                沖縄の海と言えば「ダイビング」。透き通った海水から織り成す青色はまさに幻想的。
+                水に包まれながら癒される空間を味わえます。
+            </p>
+            <p id="tag_price">費用相場：￥13,200～￥26,400</p>
+        </div>
+    </section>
+
+    <section class="bot_sec">    
+        <img src="images/act_price.png" class="price_img">
+        <img src="images/price.png" class="price">
+        <div class="price_wapper">
+            <p>料金</p>
+            <h2>ダイビング</h2>
+            <dl>
+                <dt>初心者コース（20分）</dt>
+                <dd>￥13,200-</dd>
+            </dl>
+            <dl>
+                <dt>上級者コース（40分）</dt>
+                <dd>￥26,200-</dd>
+            </dl>
+            <h2>シーカヤック</h2>
+            <dl>
+                <dt>初心者コース（20分）</dt>
+                <dd>￥1,500-</dd>
+            </dl>
+            <dl>
+                <dt>上級者コース（40分）</dt>
+                <dd>￥3,500-</dd>
+            </dl>
+            <h2>パラセーリング</h2>
+            <dl>
+                <dt>初心者コース（10分）</dt>
+                <dd>￥6,500-</dd>
+            </dl>
+            <dl>
+                <dt>上級者コース（15分）</dt>
+                <dd>￥15,000-</dd>
+            </dl>
+        </div>
+        <img src="images/act_location.png" class="location_img">
+        <img src="images/location.png" class="location">
+        <div class="location_wapper">
+            <p>おすすめエリア</p>
+            <h2>ダイビング</h2>
+            <p>慶良間諸島 / 北谷 / 恩納村</p>
+            <h2>シーカヤック</h2>
+            <p>恩納村 / 読谷村 / 瀬底島</p>
+            <h2>パラセーリング</h2>
+            <p>那覇 / 名護 / 与野湾</p>
+        </div>
+    </section>
+
+    <div class="phots">
+    <p class="photosText">五感で楽しめる場所が<br>ここにある。</p>
+        <div id="photos_slider">
+            <img src="images/photos1.png">
+            <img src="images/photos2.png">
+            <img src="images/photos3.png">
+            <img src="images/photos1.png">
+            <img src="images/photos2.png">
+            <img src="images/photos3.png">
+        </div>
+    </div>
+    <section class="form">
+        <div class="formText">
+            <h1>get in touch</h1>
+            <h2>TRIP JAPANは、”ここにしかない”日本観光を応援します。</h2>
+            <p>
+                トリップジャパンは、ユニークな日本の魅力を発信していきます。
+                お問い合わせは法人企業および自治体のみ受け付けております。
+                掲載ご希望等については<span>お問い合わせフォーム</span>
+                よりお申し込み下さい。
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="top.html">top</a></li>
+            <li><a href="activities.html">activities</a></li>
+            <li><a href="food.html">foods</a></li>
+            <li><a href="hotel.html">hotels</a></li>
+        </ul>
+        <h1>trip japan</h1>
+        <div class="icons">
+            <img src="images/instagram.png">
+            <img src="images/twitter.png">
+        </div>
+        <p>trip japanおよび当サイトは架空です</p>
+        <a href="#" class="pagetop">▲</a>
+    </footer>
+
+    <script src="scripts/activities.js"></script>
+</body>
+</html>
